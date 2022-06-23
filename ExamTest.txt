@@ -1,0 +1,44 @@
+/**
+ * import junit assertions
+ */
+import static org.junit.jupiter.api.Assertions.assertEquals;
+/**
+ * 
+ * @author yash
+ * Class ExamTest
+ */
+public class ExamTest {
+	/**
+	 * junit Test case
+	 */
+	@org.junit.Test
+	/**
+	 * Method Test
+	 */
+	public void Test() {
+		/**
+		 * object of calculator
+		 */
+		Calculator e = new Calculator();
+		/**
+		 * Declare arr1
+		 */
+		int arr1[] = {1, 2, 3};
+		/**
+		 * Declare arr2
+		 */
+		int arr2[] = {4, 5, 6};
+		/**
+		 * Declare actual to store actual resultant array
+		 */
+		int actual[] = e.Concat(arr1, arr2);
+		/**
+		 * Declare expected to store expected array
+		 */
+		int expected[] = {1, 2, 3, 4, 5, 6};
+		/**
+		 * assertEquals function to test
+		 */
+		assertEquals(expected, actual);
+	}
+}

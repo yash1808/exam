@@ -1,0 +1,38 @@
+/**
+ * 
+ * @author yash
+ * Class Calculator
+ */
+public class Calculator {
+	/**
+	 * Method Concat
+	 * @param arr1 - first array
+	 * @param arr2 - second array
+	 * @return resultant
+	 */
+	public int[] Concat(int arr1[], int arr2[]) {
+		/**
+		 * Declare array resultant
+		 */
+		int resultant[] = new int[6];
+		/**
+		 * Declare variable i = 0
+		 */
+		int i = 0;
+		/**
+		 * for loop to enter elements of 1st array in the resultant array
+		 */
+		for(int element : arr1) {
+			resultant[i] = element;
+			i++;
+		}
+		/**
+		 * for loop to enter elements of 2nd array in the resultant array
+		 */
+		for(int element : arr2) {
+			resultant[i] = element;  
+			i++;
+		}
+		return resultant;
+	}
+}
